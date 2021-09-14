@@ -1,0 +1,117 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en'>
+<head>
+  <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+  <title>Schedule Help</title>
+  <meta http-equiv='Content-Style-Type' content='text/css' />
+  
+  <link rel='stylesheet' href='http://us.pycon.org/common/css/us.pycon.org-2007-site.css' type='text/css' />
+
+</head>
+<body>
+<div id='controlbar' style="margin-bottom: 5px;">
+    <div class="toolcmds" style="margin-bottom: 5px;">
+    <a href="javascript:window.close()" alt="close window" title="close window">
+        <img style="border: 0px;" src="../../../media/2011/admin/img/admin/icon_deletelink.gif"/> Close Window</a>
+    </div>
+        <H2 style="margin-top: 3px; margin-bottom: 5px;">Schedule Help</H2>
+</div>
+<div id='pagecontent'>
+    
+    <h3>Personal Schedule</h3>
+    <div style="margin-left: 1em;">
+        <p>
+        You can create your own personal schedule by selecting the events 
+        you are
+        interested in attending. The data for selected events is stored in a
+        cookie on your local machine. This cookie has a 31-day lifespan, but
+        contains no personal identifiable information.
+        </p>
+        
+        <p>
+        If you have a PyCon login account, your information is also stored
+        on the server and your schedule will be accessible from any browser or
+        machine. If you log out, the local login schedule cookie will be removed,
+        though a non-login schedule cookie may remain. You may have to
+        <img src="../../../media/2011/schedule/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
+        re-sync with the server before changes appear on other machines.
+        Re-syncing and refreshing the schedule page have the same effect.
+        </p>
+        
+        <p>
+        <span style="font-weight: bold;">Presenters<spam> with a PyCon login
+        account will have their talks automatically selected and 
+        flagged with the
+        <img src="../../../media/2011/schedule/img/16-member.png" alt="presenter" title="presenter"/>
+        presenter icon.
+        </p>
+        
+        <p>
+        <span style="font-weight: bold;">Session Chairs</span> with a PyCon login
+        account will have thier talks autotomatically selected and flagged 
+        with the
+        <img src="../../../media/2011/schedule/img/16-tag-pencil.png" alt="session chair" title="session chair"/>
+        session chair icon. Session chairs are assigned to the Room and Time slot,
+        and not the specific talk. The talk may be changed to another room or time,
+        but the session chair assignment will not move with that change.<br/>
+        <span style="font-weight: bold; font-style: italic;">
+        </span>
+        </p>
+    </div>
+
+    <h3>Exporting your schedule</h3>
+    <div style="margin-left: 1em;">
+    
+        <p>
+        For <span style="font-weight: bold;">Apple iCal</span> or
+        <span style="font-weight: bold;">Mozilla Calendar</span>,
+        click the "iCal" link and the calendar program should start up
+        automatically and import the event(s).<br/>
+        <span style="font-style: italic;">
+        For 'Selected Events': If you do not have a PyCon login, updates may be
+        sporadic and take 24+ hours to propagate.
+        If you do have a PyCon login, you must 
+        <img src="../../../media/2011/schedule/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
+        re-sync with the server before the calendar software will see the changes.</span>        
+        </span>
+        </p>
+        
+        <p>
+        For <span style="font-weight: bold;">MS Outlook</span>,
+        click the "Outlook" link to download the file to your desktop.
+        Open up Outlook and import the file you downloaded.<br/>
+        In Outlook, Choose File-&gt;Import and Export...<br/>
+        Select "Import an iCalendar or vCalendar file (.vcs)"<br/>
+        Click "Next&gt;" and follow the instructions<br/>
+        <span style="font-weight: bold;">
+        Outlook cannot subscribe to the feed and will not automatically
+        update with changes.</span>
+        </p>
+        
+        <p>
+        For <span style="font-weight: bold;"><a href="http://www.google.com/calendar">Google Calendar</a></span>,
+        right click on the "Google" link and copy the link.
+        (Select "Copy shortcut" or "Copy link location"). Then, open
+        <a href="http://www.google.com/calendar">Google Calendar</a>,
+        and on the left, click the "+" sign next to "Other Calendars". On the
+        "Add Other Calendar" page, click "Public Calendar Address" and
+        paste the link into the form there.<br/>
+        <span style="font-style: italic;">Note: Sometimes Google Calendar
+        takes a few tries before the feed takes-- if it's giving you an
+        error message, please try entering the feed link again.<br/>
+        For 'Selected Events': If you do not have a PyCon login, you must use the
+        browser with the PyCon schedule cookie in order to get updates.
+        If you do have a PyCon login, you must 
+        <img src="../../../media/2011/schedule/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
+        re-sync with the server before Google Calendar will see the changes.</span>
+        </p>
+    </div>
+</div>
+
+<div id='controlbar'><div class="toolcmds"><a href="javascript:window.close()" alt="close window" title="close window">
+        <img style="border: 0px;" src="../../../media/2011/admin/img/admin/icon_deletelink.gif"/> Close Window</a></div>
+</div>
+</body>
+</html>

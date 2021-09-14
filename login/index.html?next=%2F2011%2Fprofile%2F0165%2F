@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Login - PyCon Australia 2011 Sydney - August 20/21 - A Conference for the Australian Python Community</title>
+    <link rel="stylesheet" type="text/css" href="../../media/2011/pyconau2011/css/base.css" />
+    <meta name="robots" content="index,follow" />
+    
+    <link rel="icon" type="image/png" href="../../media/2011/favicon.png">
+    
+    
+    
+    
+	<script language="Javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="../../media/2011/jquery.lwtCountdown-1.0.js"></script>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23524683-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body>
+
+    <div id="frame">
+    <table id="layout" cellpadding="0" cellspacing="0" border="0">
+      <tr><td class="zeroed" colspan="2">
+          <div id="search">
+            <div style="float: right; vertical-align: top; height: 20px;">&nbsp;</div>
+            
+          <form id="searchbox_013215799341597957085:m0qv1pf2oge" action="http://www.google.com/cse">
+            <input type="hidden" name="cx" value="013215799341597957085:m0qv1pf2oge" />
+            <input type="hidden" name="cof" value="FORID:0" />
+            <input name="q" tabindex="999" class="textfield" type="text" onclick="this.value=''" value="search" />
+            
+          </form>
+            
+          </div>
+
+          <div id="header-container">
+          <div id="header">
+            <a href="../index.html">
+            <img src="../../media/2011/pyconau2011/img/masthead6.png"
+                 alt="PyCon Australia 2011 Sydney" />
+            </a>
+          </div>
+
+          <div class="defloat">&nbsp;</div>
+
+          <div id="dashboard">
+            <div id="metanav">
+              
+              <ul>
+                <li class="first"><a href="../helping/bugs/index.html">Report Website Bug</a></li>
+                
+                <li><a href="index.html?next=%252F2011%252Flogin%252F" rel='nofollow'>Log in</a></li>
+                <li class="last"><a href="../profile/new/index.html?next=%252F2011%252Flogin%252F">Create Account</a></li>
+                
+              </ul>
+              
+            </div>
+
+            <div id="breadcrumbs">
+              
+&nbsp;
+              
+              
+            </div>
+          </div>
+          </div>
+
+          <div id="nav">
+          
+          
+          
+          <div id="nav-one">
+            <ul>
+              
+              <li><a class="" href="../index.html" title="Home">Home</a></li>
+              
+              <li><a class="" href="../sponsors/index.html" title="About our sponsors">Our Sponsors</a></li>
+              
+              <li><a class="" href="http://www.youtube.com/user/PyConAU" >Videos</a></li>
+              
+              <li><a class="" href="../conference/index.html" title="Program">Program</a></li>
+              
+              <li><a class="" href="../sprints/index.html" title="Sprints">Sprints</a></li>
+              
+              <li><a class="" href="../registration.1" title="Registration">Registration</a></li>
+              
+              <li><a class="" href="../press/index.html" title="Press">Press</a></li>
+              
+              <li><a class="" href="../sponsor-info/index.html" title="Sponsor PyCon AU, Help make the conference better!">Sponsor</a></li>
+              
+              <li><a class=" last" href="../conduct/index.html" >Code of Conduct</a></li>
+              
+            </ul>
+            <div class="defloat">&nbsp;</div>
+          </div>
+          
+          
+          <div class="ghost">&nbsp;</div>
+          </div>
+
+      </td></tr>
+
+      <tr><td class="zeroed">
+          <div id="content">
+            
+
+<span class="login" id="container">
+<h1 id="site-name" >PyCon Australia 2011 Sydney Login</h1>
+
+
+
+<div id="content-main">
+<form action="index.html?next=%252F2011%252Fprofile%252F0165%252F" method="post" id="login-form"><div style='display:none;'><input type='hidden' id='csrfmiddlewaretoken' name='csrfmiddlewaretoken' value='ebcdae0df9d72cea868679e941270447' /></div>
+  <div class="form-row">
+    <label for="id_username">Username:</label> <input tabindex="1" type="text" name="username" id="id_username" />
+    <span class="help">Don't have an account? <a tabindex="4" href="../profile/new/index.html?next=%252F2011%252Fprofile%252F0165%252F">Create one here</a>.</span>
+  </div>
+  <div class="form-row">
+    <label for="id_password">Password:</label> <input tabindex="2" type="password" name="password" id="id_password" />
+    <span class="help">Have you <a tabindex="5" href="../profile/reset_password/index.html">forgotten your password</a>?</span>
+  </div>
+  <div class="submit-row">
+    <input tabindex="3" type="submit" class="default" value="Log in" />
+  </div>
+</form>
+
+<script type="text/javascript">
+document.getElementById('id_username').focus()
+</script>
+</div>
+
+<br /><br />
+
+<h1>New User? Create an Account</h1>
+
+<p>You need a username and password to proceed.  It's quick and easy - <a tabindex="5" href="../profile/new/index.html?next=%252F2011%252Fprofile%252F0165%252F">create one here</a>.</p>
+
+</span>
+
+
+          </div>
+
+      </td><td class="zeroed right">
+
+          
+
+      </td></tr>
+
+      <tr><td class="zeroed" colspan="2">
+          <div id="footer">
+            
+            <div class="badge django">
+              <a href="http://www.djangoproject.com">
+              made with <img src="../../media/2011/pyconau2011/img/django-footer.png" alt="django" />.
+              </a>
+            </div>
+            <div class="badge mod-wsgi">
+              <a href="http://www.modwsgi.org">
+              powered by <strong>mod_wsgi</strong>.
+              </a>
+            </div>
+            <div class="badge tummy">
+              <a href="http://www.tummy.com">
+              hosted by <strong>tummy.com</strong>.
+              </a>
+            </div>
+            <div class="general">
+
+              Content Generated: Tue, 18 Sep 2012 14:46:09 +1000
+              <!-- <div id="iltag">Made in collaboration with <a href="http://www.imagescape.com">Imaginary Landscape</a>.</div> -->
+
+            </div>
+            
+          </div>
+          <div id="spacer">&nbsp;</div>
+      </td></tr>
+    </table>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>PyCon Australia 2011 Sydney Events Schedule - PyCon Australia 2011 Sydney - August 20/21 - A Conference for the Australian Python Community</title>
+    <link rel="stylesheet" type="text/css" href="../../../media/2011/pyconau2011/css/base.css" />
+    <meta name="robots" content="index,follow" />
+    
+    <link rel="icon" type="image/png" href="../../../media/2011/favicon.png">
+    
+    
+    
+<style type="text/css">
+
+table.timetable { border-collapse: separate; }
+.timetable { margin: 0px 0px 0px 0px; text-align: center; }
+.timetable thead {}
+.timetable th { border: 2px solid #CCCCCC;
+                text-align: center !important;
+                padding-left: 3px;
+                padding-right: 3px;
+                border-top: 0px;
+                border-left: 0px;
+                border-bottom: 1px solid #CCCCCC; }
+.timetable tr {}
+.timetable td { border: 2px solid #CCCCCC;
+                padding-left: 3px;
+                padding-right: 3px;
+                vertical-align: top;}
+
+.timetable .time {
+                       font-weight: bold;
+                       border-top: 2px solid #CCCCCC;
+                       border-bottom: 1px solid #CCCCCC;
+                       border-left: 0px;
+                       width: 7em;
+                       background-color: #FFFFFF; }
+.timetable .time:hover { cursor: default; }
+
+.timetable .legend   { text-align: center; border: 0px; border-top: 1px solid #CCCCCC; background-color: #FFFFFF; padding-top: 4px}
+.timetable .empty    { background-color: #CCCCCC; border: 2px solid #CCCCCC; padding: 0px !important; height: 3px !important;}
+.timetable td.empty:hover  { cursor: default;}
+
+.timetable td.legend:hover { cursor: default;}
+.timetable .legend span { white-space: nowrap; padding-left: 3px; padding-right: 3px; }
+
+.timetable a.eventinfo { color: #000000 !important; text-decoration: none !important; background: none !important;}
+.timetable a.eventinfo:hover { color: #000000 !important; text-decoration: underline !important; background: none; /*font-weight: bold;*/ }
+td.s_plenary a.eventinfo { color: #FFFFFF !important; }
+td.s_plenary a.eventinfo:hover { color: #FFFFFF !important; text-decoration: underline; background: none; /*font-weight: bold;*/ }
+
+.timetable .break       { border-bottom-color: #eCFFFF; border-left-color: #eCFFFF; background-color: #eCFFFF; }
+.timetable .break:hover { cursor: default; }
+
+
+.timetable .event30  { border-bottom-color: #FFFCC9;  border-left-color: #FFFCC9;  background-color: #FFFCC9; }
+.timetable .event45  { border-bottom-color: #FFDDAA;  border-left-color: #FFDDAA;  background-color: #FFDDAA; }
+.timetable .plenary  { border-bottom-color: #dCdCFF;  border-left-color: #dCdCFF;  background-color: #dCdCFF; }
+.timetable .meeting  { border-bottom-color: #CCFFCC;  border-left-color: #CCFFCC;  background-color: #CCFFCC; }
+.timetable .tutorial { border-bottom-color: #BBEEFF; border-left-color: #BBEEFF; background-color: #BBEEFF; }
+.timetable .social   { border-bottom-color: #FFDDFF;   border-left-color: #FFDDFF;   background-color: #FFDDFF; }
+
+.timetable .s_event30  { border-bottom-color: #FFFF66;  border-left-color: #FFFF66;  background-color: #FFFF66; }
+.timetable .s_event45  { border-bottom-color: #FF9966;  border-left-color: #FF9966;  background-color: #FF9966; }
+.timetable .s_plenary  { border-bottom-color: #336699;  border-left-color: #336699;  background-color: #336699; color: #FFFFFF;}
+.timetable .s_meeting  { border-bottom-color: #66FF66;  border-left-color: #66FF66;  background-color: #66FF66; }
+.timetable .s_tutorial { border-bottom-color: #33FFCC; border-left-color: #33FFCC; background-color: #33FFCC; }
+.timetable .s_social   { border-bottom-color: #FF99FF;   border-left-color: #FF99FF;   background-color: #FF99FF; }
+
+.timetable td:hover { cursor: pointer;}
+
+body .dojoTooltip a:link    {color: #0000FF; text-decoration: none;}
+body .dojoTooltip a:visited {color: #0000FF; text-decoration: none;}
+body .dojoTooltip a:hover   {color: #000000; text-decoration: underline;}
+body .dojoTooltip a:active  {color: #0000FF; text-decoration: none;}
+body .dojoTooltip { color: #3C4B7B; border: solid 2px #3C4B7B; padding: 4px; background-color: #FFFCC9; }
+body .break    {background-color: #eCFFFF;}
+body .event45  {background-color: #FFDDAA;}
+body .meeting  {background-color: #CCFFCC;}
+body .tutorial {background-color: #BBEEFF;}
+body .social   {background-color: #FFDDFF;}
+body .plenary  {background-color: #dCdCFF;}
+
+body .tooltip_attach { padding-top: 1px; padding-bottom: 3px; }
+body .tooltip_attach:hover {padding-top: 0px; padding-bottom: 2px; border-top: solid 1px #3C4B7B; border-bottom: solid 1px  #3C4B7B; }
+body .tooltip_attach .label { font-size: smaller; cursor: pointer; padding-bottom: 1px; }
+body .tooltip_attach .label_closed { font-size: smaller; cursor: pointer; padding-bottom: 1px; }
+body .tooltip_attach .label_open { font-size: smaller; cursor: pointer; padding-bottom: 0px; border-bottom: dotted 1px #3C4B7B;}
+body .tooltip_attach .content { padding-bottom: 2px; padding-top: 3px; padding-left: 1em; }
+.attached_files { font-size: smaller; }
+.attached_files caption { font-style: italic; font-size: smaller; border-bottom: dotted 1px #3C4B7B;}
+.attached_files th { text-align: left; border-bottom: solid 1px  #3C4B7B; }
+.attached_files .last td { border-bottom: solid 1px  #3C4B7B; }
+div.success {display:block; padding:4px 5px 4px 20px; margin:0 0 3px 0; font-size: smaller;
+             background:transparent url(/media/2011/schedule/img/12-em-check.png) 5px .3em no-repeat;}
+div.error {display:block; padding:4px 5px 4px 22px; margin:0 0 3px 0; font-size: smaller;
+           background:transparent url(/media/2011/schedule/img/16-message-warn.png) 5px .3em no-repeat;}
+label.required { width: 5.5em !important; float:left;}
+p.help { font-size: smaller; padding-left: 6.7em; width: 27em;}
+.errorlist li { display:block; padding:4px 5px 4px 25px;
+                margin:0 0 3px 0; border:1px solid red; color:white;
+                background:red url(/media/2011/admin/img/admin/icon_alert.gif) 5px .3em no-repeat; }
+
+.timetable td.tutorial_h1   { border-color: #3C4B7B; border-bottom-color: #BBEEFF; background-color: #BBEEFF; }
+.timetable td.tutorial_h2   { border-color: #3C4B7B; border-top-color:    #CCCCCC;    background-color: #BBEEFF; }
+.timetable td.s_tutorial_h1 { border-color: #3C4B7B; border-bottom-color: #33FFCC; background-color: #33FFCC; }
+.timetable td.s_tutorial_h2 { border-color: #3C4B7B; border-top-color:    #CCCCCC;    background-color: #33FFCC; }
+
+.icon_hidden { display: none; }
+.icon_author { display: inline; float: left;  }
+.icon_schair { display: inline; float: left;  }
+.icon_media  { display: inline; float: right; }
+.icon_sync   { display: inline; }
+.hidden  { display: none; }
+
+#advert { font-weight: bold; font-size: larger; }
+#talklink { font-weight: bold;  }
+#print { float: right; }
+</style>
+
+    
+
+<script type="text/javascript" src="../../../media/2011/dojo/dojo.js"></script>
+<script type="text/javascript" src="../../../media/2011/schedule/js/timetables.js"></script>
+
+
+	<script language="Javascript" type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script language="Javascript" type="text/javascript" src="../../../media/2011/jquery.lwtCountdown-1.0.js"></script>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23524683-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body>
+
+    <div id="frame">
+    <table id="layout" cellpadding="0" cellspacing="0" border="0">
+      <tr><td class="zeroed" colspan="2">
+          <div id="search">
+            <div style="float: right; vertical-align: top; height: 20px;">&nbsp;</div>
+            
+          <form id="searchbox_013215799341597957085:m0qv1pf2oge" action="http://www.google.com/cse">
+            <input type="hidden" name="cx" value="013215799341597957085:m0qv1pf2oge" />
+            <input type="hidden" name="cof" value="FORID:0" />
+            <input name="q" tabindex="999" class="textfield" type="text" onclick="this.value=''" value="search" />
+            
+          </form>
+            
+          </div>
+
+          <div id="header-container">
+          <div id="header">
+            <a href="../../index.html">
+            <img src="../../../media/2011/pyconau2011/img/masthead6.png"
+                 alt="PyCon Australia 2011 Sydney" />
+            </a>
+          </div>
+
+          <div class="defloat">&nbsp;</div>
+
+          <div id="dashboard">
+            <div id="metanav">
+              
+              <ul>
+                <li class="first"><a href="../../helping/bugs/index.html">Report Website Bug</a></li>
+                
+                <li><a href="../../login/index.html?next=%252F2011%252Fconference%252Fschedule%252F" rel='nofollow'>Log in</a></li>
+                <li class="last"><a href="../../profile/new/index.html?next=%252F2011%252Fconference%252Fschedule%252F">Create Account</a></li>
+                
+              </ul>
+              
+            </div>
+
+            <div id="breadcrumbs">
+              
+&nbsp;
+              
+              
+            </div>
+          </div>
+          </div>
+
+          <div id="nav">
+          
+          
+          
+          <div id="nav-one">
+            <ul>
+              
+              <li><a class="" href="../../index.html" title="Home">Home</a></li>
+              
+              <li><a class="" href="../../sponsors/index.html" title="About our sponsors">Our Sponsors</a></li>
+              
+              <li><a class="" href="http://www.youtube.com/user/PyConAU" >Videos</a></li>
+              
+              <li><a class="" href="../index.html" title="Program">Program</a></li>
+              
+              <li><a class="" href="../../sprints/index.html" title="Sprints">Sprints</a></li>
+              
+              <li><a class="" href="../../registration.1" title="Registration">Registration</a></li>
+              
+              <li><a class="" href="../../press/index.html" title="Press">Press</a></li>
+              
+              <li><a class="" href="../../sponsor-info/index.html" title="Sponsor PyCon AU, Help make the conference better!">Sponsor</a></li>
+              
+              <li><a class=" last" href="../../conduct/index.html" >Code of Conduct</a></li>
+              
+            </ul>
+            <div class="defloat">&nbsp;</div>
+          </div>
+          
+          
+          <div class="ghost">&nbsp;</div>
+          </div>
+
+      </td></tr>
+
+      <tr><td class="zeroed">
+          <div id="content">
+            
+
+            
+<script type="text/javascript">
+    <!--
+    cookie_data_load( "pycon2011talksched", "/2011/conference/schedule/", 93, 0);
+    // -->
+</script>
+<div id='print'>
+<a id='printlink'><img src="../../../media/2011/schedule/img/printer.png"/> Print Options</a></div>
+<div dojoType="tooltip" connectId="printlink" toggle="explode" class="hidden">
+<form action="http://pycon-au.org/2011/conference/schedule/print/" method="post" id='print_form' target='_blank'><div style='display:none;'><input type='hidden' id='csrfmiddlewaretoken' name='csrfmiddlewaretoken' value='ebcdae0df9d72cea868679e941270447' /></div>
+    <fieldset>
+        <legend>Tables</legend>
+        
+        <input type="checkbox" name="tables" value="program-fri" checked /> Friday 19th August<br/>
+        
+        <input type="checkbox" name="tables" value="program-sat" checked /> Saturday 20th August<br/>
+        
+        <input type="checkbox" name="tables" value="program-sun" checked /> Sunday 21st August<br/>
+        
+    </fieldset>
+    <fieldset>
+        <legend>Options</legend>
+        <input type="checkbox" name="options" value="floorplan" checked /> Include Floorplan<br/>
+        <input type="checkbox" name="options" value="color" checked /> Color<br/>
+        <input type="checkbox" name="options" value="selected" checked /> Mark Selected<br/>
+        <input type="checkbox" name="options" value="pagebreak" checked /> Smart Page Breaks<br/>
+    </fieldset>
+    <span style="padding-left: 5em;"><input type="submit" value="Preview & Print"/></span>
+</form>
+</div>
+<div id='feeds'>
+Calendar Feed
+<sup><a href="help" target="_new" style="text-decoration:none;" name="help" onclick="window.open(this.href, 'Time Table Help', 'height=500,width=400,resizable=yes,scrollbars=yes').focus(); return false;"><img src="../../../media/2011/admin/img/admin/icon-unknown.gif" alt='help' title='help'/></a></sup>
+: All Events (<a href="webcal://127.0.0.1:8000/2011/conference/schedule/ical/" rel="nofollow">iCal</a> |
+  <a href="ical/index.html" rel="nofollow">Google/Outlook</a>) Selected Events (
+  <a href="webcal://127.0.0.1:8000/2011/conference/schedule/ical/3407b6f2359860b47f7e71909f50d4ea/" rel="nofollow">iCal</a> |
+  <a href="ical/3407b6f2359860b47f7e71909f50d4ea/index.html" rel="nofollow">Google/Outlook</a>)
+<div/><br/>
+
+<div id='message'>
+    Click on events to create a personal schedule. Organizers can use this information to help estimate interest in events.<br/>
+    Users with PyCon login accounts have extra features. See the
+    <a href="help" target="_new" style="text-decoration:none;" name="help" onclick="window.open(this.href, 'Time Table Help', 'height=500,width=400,resizable=yes,scrollbars=yes').focus(); return false;">help<sup><img src="../../../media/2011/admin/img/admin/icon-unknown.gif" alt='help' title='help'/></sup></a>
+    for more information.
+</div><span id='advert'>Help Out! Volunteer to be part of the <a href="../../helping/session_staff/index.html">Session Staff</a>!</span>
+<br/>
+
+<br/>
+<table class='timetable' cellspacing='0'>
+    <caption><h2>Friday 19th August<sup><a href="help" target="_new" style="text-decoration:none;" name="help" onclick="window.open(this.href, 'Time Table Help', 'height=500,width=400,resizable=yes,scrollbars=yes').focus(); return false;"><img src="../../../media/2011/admin/img/admin/icon-unknown.gif" alt='help' title='help'/></a></sup>
+</h2></caption>
+    <thead><tr><th class='room'><span class='hidden'>.</span>
+            </th>
+    <th class='room'>CodeWars Venue</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+        <td  rowspan='2' class="time"   >
+        06:00pm
+        </td>
+        <td  class="social" id='E042'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS54' name="ICO42"
+            class='hidden'></span><a class="eventinfo" id='TT54' href='../../codewars/index.html'>CodeWars</a></td>
+    </tr><tr>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr>
+    </tbody>
+    <tfoot><tr><td colspan='2' class='legend'><span>&loz; beginner&nbsp;&nbsp;</span><span>&loz;&loz; intermediate&nbsp;&nbsp;</span><span>&loz;&loz;&loz; advanced&nbsp;&nbsp;</span> <span class='event30'>30min talk</span><span class='event45'>45min talk</span><span class='plenary'>plenary event</span><span class='meeting'>meeting/etc.</span><span class='social'>social event</span><span class='break'>break</span> <span><img src="../../../media/2011/schedule/img/16-file-page.png" alt="slides" title="slides"/>slides</span><span><img src="../../../media/2011/schedule/img/16-image.png" alt="video" title="video"/>video</span><span><img src="../../../media/2011/schedule/img/16-tag-pencil.png" alt="session chair" title="session chair"/>session chair</span>
+    </td></tr></tfoot>
+</table>
+
+    <span dojoType="tooltip" connectId="syncsaveid2" toggle="fade" class="hidden">
+        <h3>Save/Sync with server</h3>
+        This is only usefull if using multiple browsers or multiple machines.<br/>
+        Re-loading this page will do the same thing.<br/>
+        Make sure to sync before logging out.</span>
+    <span dojoType="tooltip" connectId="syncrevertid2" toggle="fade" class="hidden">
+        <h3>Undo Changes</h3>
+        This is only usefull if using multiple browsers or multiple machines.<br/>
+        This will delete the local cookie and reload the page.<br/>
+        Make sure to sync before logging out.</span>
+    
+    <span dojoType="tooltip" connectId="TT54" href="/2011/conference/schedule/tooltip/42/" executeScripts="true" toggle="fade" class="social"></span>
+
+
+<br/>
+<table class='timetable' cellspacing='0'>
+    <caption><h2>Saturday 20th August<sup><a href="help" target="_new" style="text-decoration:none;" name="help" onclick="window.open(this.href, 'Time Table Help', 'height=500,width=400,resizable=yes,scrollbars=yes').focus(); return false;"><img src="../../../media/2011/admin/img/admin/icon-unknown.gif" alt='help' title='help'/></a></sup>
+</h2></caption>
+    <thead><tr><th class='room'><span class='hidden'>.</span>
+            </th>
+    <th class='room'>Grand Lodge</th><th class='room'>Ionic</th><th class='room'>Corinthian</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+        <td  rowspan='2' class="time"   >
+        07:30am
+        </td>
+        <td  colspan='3' class="social" id='E047'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS59' name="ICO47"
+            class='hidden'></span><a class="eventinfo" id='TT59' href='event/47/index.html'>Women in Python Breakfast</a></td>
+    </tr><tr>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="time"   >
+        09:00am
+        </td>
+        <td  class="plenary" id='E006'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS1' name="ICO6"
+            class='hidden'></span><a class="eventinfo" id='TT1' href='event/6/index.html'>Welcome</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="time"   >
+        09:15am
+        </td>
+        <td  class="plenary" id='E043'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS55' name="ICO43"
+            class='hidden'></span><a class="eventinfo" id='TT55' href='event/43/index.html'>Keynote: Audrey Roy</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="time"   >
+        10:00am
+        </td>
+        <td  colspan='3' class="break" id='E002'  ><span class="hidden"></span><span id='ICOS2' name="ICO2"
+            class='hidden'></span><a class="eventinfo" id='TT2' href='event/2/index.html'>Morning Break</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        10:20am
+        </td>
+        <td  class="event30" id='E009'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS3' name="ICO9"
+            class='hidden'></span><a class="eventinfo" id='TT3' href='event/9/index.html'>State of CPython and Python Ecosystem</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Senthil Kumaran</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E010'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS4' name="ICO10"
+            
+            class='icon_schair'><span name="ICC10"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Andy Todd" title="Mr. Andy Todd"/></span><br/></span><a class="eventinfo" id='TT4' href='event/10/index.html'>A Python on the Couch</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Mark J Rees</span><br/>&loz;
+        </td>
+        <td  rowspan='5' class="event45" id='E011'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS5' name="ICO11"
+            class='hidden'></span><a class="eventinfo" id='TT5' href='event/11/index.html'>Python 101+</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Peter Lovett</span><br/>&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        10:50am
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS6' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT6' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        11:00am
+        </td>
+        <td  class="event30" id='E012'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS7' name="ICO12"
+            class='hidden'></span><a class="eventinfo" id='TT7' href='event/12/index.html'>How Python Evolves (and How You Can Help Make It Happen)</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Nick Coghlan</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E013'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS8' name="ICO13"
+            
+            class='icon_schair'><span name="ICC13"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Andy Todd" title="Mr. Andy Todd"/></span><br/></span><a class="eventinfo" id='TT8' href='event/13/index.html'>Pants - Network Programming Made Easy</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Christopher Davis</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        11:30am
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS9' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT9' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        11:40am
+        </td>
+        <td  class="event30" id='E014'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS10' name="ICO14"
+            class='hidden'></span><a class="eventinfo" id='TT10' href='event/14/index.html'>Zookeepr: Home-grown conference management software</a><br/><span style="font-size: smaller; font-style: italic;">Ms. Brianna Laugher</span><br/>&loz;
+        </td>
+        <td  class="event30" id='E015'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS11' name="ICO15"
+            class='hidden'></span><a class="eventinfo" id='TT11' href='event/15/index.html'>Networking Libraries in Python.</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Senthil Kumaran</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        12:10pm
+        </td>
+        <td  colspan='3' class="break" id='E004'  ><span class="hidden"></span><span id='ICOS12' name="ICO4"
+            class='hidden'></span><a class="eventinfo" id='TT12' href='event/4/index.html'>Lunch</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        01:10pm
+        </td>
+        <td  class="event45" id='E016'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS13' name="ICO16"
+            class='hidden'></span><a class="eventinfo" id='TT13' href='event/16/index.html'>Panel: Python 3</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Anthony Baxter Esq., Mr. Nick Coghlan, Raymond D Hettinger, Richard Jones</span><br/>&loz;
+        </td>
+        <td  class="event45" id='E017'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS14' name="ICO17"
+            
+            class='icon_schair'><span name="ICC17"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Dr. Russell K Keith-Magee" title="Dr. Russell K Keith-Magee"/></span><br/></span><a class="eventinfo" id='TT14' href='event/17/index.html'>Pyramid: Lighter, faster, better web apps</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Dylan Jay</span><br/>&loz;
+        </td>
+        <td  class="event45" id='E018'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS15' name="ICO18"
+            
+            class='icon_schair'><span name="ICC18"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Kaleb e Ufton" title="Kaleb e Ufton"/></span><br/></span><a class="eventinfo" id='TT15' href='event/18/index.html'>Python&#39;s dark corners - the bad bits in Python and how to avoid them</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Peter Lovett</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        01:55pm
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS16' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT16' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        02:05pm
+        </td>
+        <td  class="event45" id='E019'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS17' name="ICO19"
+            class='hidden'></span><a class="eventinfo" id='TT17' href='event/19/index.html'>Easy site migration using Diazo and Funnelweb</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Adam Terrey</span><br/>&loz;
+        </td>
+        <td  class="event45" id='E020'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS18' name="ICO20"
+            
+            class='icon_schair'><span name="ICC20"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Dr. Russell K Keith-Magee" title="Dr. Russell K Keith-Magee"/></span><br/></span><a class="eventinfo" id='TT18' href='event/20/index.html'>Introduction to the Geospatial Web with GeoDjango</a><br/><span style="font-size: smaller; font-style: italic;">Javier Candeira</span><br/>&loz;&loz;
+        </td>
+        <td  class="event45" id='E021'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS19' name="ICO21"
+            
+            class='icon_schair'><span name="ICC21"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Kaleb e Ufton" title="Kaleb e Ufton"/></span><br/></span><a class="eventinfo" id='TT19' href='event/21/index.html'>Confessions of Joe Developer</a><br/><span style="font-size: smaller; font-style: italic;">Daniel Greenfeld</span><br/>&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        02:50pm
+        </td>
+        <td  colspan='3' class="break" id='E003'  ><span class="hidden"></span><span id='ICOS20' name="ICO3"
+            class='hidden'></span><a class="eventinfo" id='TT20' href='event/3/index.html'>Afternoon Break</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        03:10pm
+        </td>
+        <td  class="event30" id='E022'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS21' name="ICO22"
+            class='hidden'></span><a class="eventinfo" id='TT21' href='event/22/index.html'>Infinite 8-bit Platformer</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Chris McCormick</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E023'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS22' name="ICO23"
+            
+            class='icon_schair'><span name="ICC23"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Dr. Graeme Cross" title="Dr. Graeme Cross"/></span><br/></span><a class="eventinfo" id='TT22' href='event/23/index.html'>Developing Scientific Software in Python</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Duncan S Gray</span><br/>&loz;&loz;
+        </td>
+        <td  rowspan='3' class="event45" id='E024'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS23' name="ICO24"
+            class='hidden'></span><a class="eventinfo" id='TT23' href='event/24/index.html'>The Zen of Python</a><br/><span style="font-size: smaller; font-style: italic;">Richard Jones</span><br/>&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        03:40pm
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS24' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT24' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        03:50pm
+        </td>
+        <td  class="event30" id='E025'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS25' name="ICO25"
+            class='hidden'></span><a class="eventinfo" id='TT25' href='event/25/index.html'>Behaviour Driven Development</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Malcolm Tredinnick</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E026'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS26' name="ICO26"
+            
+            class='icon_schair'><span name="ICC26"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Dr. Graeme Cross" title="Dr. Graeme Cross"/></span><br/></span><a class="eventinfo" id='TT26' href='event/26/index.html'>Weather field warping using Python.</a><br/><span style="font-size: smaller; font-style: italic;">Dr. Nathan Faggian</span><br/>&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        04:20pm
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS27' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT27' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        04:30pm
+        </td>
+        <td  class="plenary" id='E044'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS56' name="ICO44"
+            class='hidden'></span><a class="eventinfo" id='TT56' href='event/44/index.html'>Keynote: Mary Gardiner</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="time"   >
+        05:00pm
+        </td>
+        <td  class="plenary" id='E005'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS28' name="ICO5"
+            class='hidden'></span><a class="eventinfo" id='TT28' href='event/5/index.html'>Lightning talks</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  rowspan='2' class="time"   >
+        05:45pm
+        </td>
+        <td  colspan='3' class="social" id='E048'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS60' name="ICO48"
+            class='hidden'></span><a class="eventinfo" id='TT60' href='event/48/index.html'>Hosting Panel @ Mr B&#39;s Pub</a></td>
+    </tr><tr>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  rowspan='2' class="time"   >
+        07:15pm
+        </td>
+        <td  colspan='3' class="social" id='E046'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS58' name="ICO46"
+            class='hidden'></span><a class="eventinfo" id='TT58' href='event/46/index.html'>Dinner</a></td>
+    </tr><tr>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr>
+    </tbody>
+    <tfoot><tr><td colspan='4' class='legend'><span>&loz; beginner&nbsp;&nbsp;</span><span>&loz;&loz; intermediate&nbsp;&nbsp;</span><span>&loz;&loz;&loz; advanced&nbsp;&nbsp;</span> <span class='event30'>30min talk</span><span class='event45'>45min talk</span><span class='plenary'>plenary event</span><span class='meeting'>meeting/etc.</span><span class='social'>social event</span><span class='break'>break</span> <span><img src="../../../media/2011/schedule/img/16-file-page.png" alt="slides" title="slides"/>slides</span><span><img src="../../../media/2011/schedule/img/16-image.png" alt="video" title="video"/>video</span><span><img src="../../../media/2011/schedule/img/16-tag-pencil.png" alt="session chair" title="session chair"/>session chair</span>
+    </td></tr></tfoot>
+</table>
+
+    <span dojoType="tooltip" connectId="syncsaveid3" toggle="fade" class="hidden">
+        <h3>Save/Sync with server</h3>
+        This is only usefull if using multiple browsers or multiple machines.<br/>
+        Re-loading this page will do the same thing.<br/>
+        Make sure to sync before logging out.</span>
+    <span dojoType="tooltip" connectId="syncrevertid3" toggle="fade" class="hidden">
+        <h3>Undo Changes</h3>
+        This is only usefull if using multiple browsers or multiple machines.<br/>
+        This will delete the local cookie and reload the page.<br/>
+        Make sure to sync before logging out.</span>
+    
+    <span dojoType="tooltip" connectId="TT59" href="/2011/conference/schedule/tooltip/47/" executeScripts="true" toggle="fade" class="social"></span>
+    <span dojoType="tooltip" connectId="TT1" href="/2011/conference/schedule/tooltip/6/" executeScripts="true" toggle="fade" class="plenary"></span>
+    <span dojoType="tooltip" connectId="TT55" href="/2011/conference/schedule/tooltip/43/" executeScripts="true" toggle="fade" class="plenary"></span>
+    <span dojoType="tooltip" connectId="TT2" href="/2011/conference/schedule/tooltip/2/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT3" href="/2011/conference/schedule/tooltip/9/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT4" href="/2011/conference/schedule/tooltip/10/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT5" href="/2011/conference/schedule/tooltip/11/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT6" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT7" href="/2011/conference/schedule/tooltip/12/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT8" href="/2011/conference/schedule/tooltip/13/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT9" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT10" href="/2011/conference/schedule/tooltip/14/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT11" href="/2011/conference/schedule/tooltip/15/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT12" href="/2011/conference/schedule/tooltip/4/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT13" href="/2011/conference/schedule/tooltip/16/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT14" href="/2011/conference/schedule/tooltip/17/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT15" href="/2011/conference/schedule/tooltip/18/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT16" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT17" href="/2011/conference/schedule/tooltip/19/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT18" href="/2011/conference/schedule/tooltip/20/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT19" href="/2011/conference/schedule/tooltip/21/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT20" href="/2011/conference/schedule/tooltip/3/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT21" href="/2011/conference/schedule/tooltip/22/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT22" href="/2011/conference/schedule/tooltip/23/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT23" href="/2011/conference/schedule/tooltip/24/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT24" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT25" href="/2011/conference/schedule/tooltip/25/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT26" href="/2011/conference/schedule/tooltip/26/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT27" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT56" href="/2011/conference/schedule/tooltip/44/" executeScripts="true" toggle="fade" class="plenary"></span>
+    <span dojoType="tooltip" connectId="TT28" href="/2011/conference/schedule/tooltip/5/" executeScripts="true" toggle="fade" class="plenary"></span>
+    <span dojoType="tooltip" connectId="TT60" href="/2011/conference/schedule/tooltip/48/" executeScripts="true" toggle="fade" class="social"></span>
+    <span dojoType="tooltip" connectId="TT58" href="/2011/conference/schedule/tooltip/46/" executeScripts="true" toggle="fade" class="social"></span>
+
+
+<br/>
+<table class='timetable' cellspacing='0'>
+    <caption><h2>Sunday 21st August<sup><a href="help" target="_new" style="text-decoration:none;" name="help" onclick="window.open(this.href, 'Time Table Help', 'height=500,width=400,resizable=yes,scrollbars=yes').focus(); return false;"><img src="../../../media/2011/admin/img/admin/icon-unknown.gif" alt='help' title='help'/></a></sup>
+</h2></caption>
+    <thead><tr><th class='room'><span class='hidden'>.</span>
+            </th>
+    <th class='room'>Grand Lodge</th><th class='room'>Ionic</th><th class='room'>Corinthian</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+        <td  class="time"   >
+        09:00am
+        </td>
+        <td  class="plenary" id='E007'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS29' name="ICO7"
+            class='hidden'></span><a class="eventinfo" id='TT29' href='event/7/index.html'>Opening</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  rowspan='2' class="time"   >
+        09:15am
+        </td>
+        <td  class="plenary" id='E045'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS57' name="ICO45"
+            class='hidden'></span><a class="eventinfo" id='TT57' href='event/45/index.html'>Keynote: Raymond Hettinger</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="time"   >
+        10:00am
+        </td>
+        <td  colspan='3' class="break" id='E002'  ><span class="hidden"></span><span id='ICOS30' name="ICO2"
+            class='hidden'></span><a class="eventinfo" id='TT30' href='event/2/index.html'>Morning Break</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        10:20am
+        </td>
+        <td  class="event30" id='E027'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS31' name="ICO27"
+            
+            class='icon_schair'><span name="ICC27"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Dr. Russell K Keith-Magee" title="Dr. Russell K Keith-Magee"/></span><br/></span><a class="eventinfo" id='TT31' href='event/27/index.html'>Hosting Python Web Applications</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Graham P Dumpleton</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E028'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS32' name="ICO28"
+            
+            class='icon_schair'><span name="ICC28"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Andy Todd" title="Mr. Andy Todd"/></span><br/></span><a class="eventinfo" id='TT32' href='event/28/index.html'>Sysadmins vs Developers, a take from the other side of the fence</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Benjamin A Smith</span><br/>&loz;&loz;
+        </td>
+        <td  rowspan='5' class="event45" id='E029'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS33' name="ICO29"
+            class='hidden'></span><a class="eventinfo" id='TT33' href='event/29/index.html'>Python for Science and Engineering, Part 1</a><br/><span style="font-size: smaller; font-style: italic;">Dr. Edward Schofield</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        10:50am
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS34' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT34' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        11:00am
+        </td>
+        <td  class="event30" id='E030'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS35' name="ICO30"
+            
+            class='icon_schair'><span name="ICC30"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Dr. Russell K Keith-Magee" title="Dr. Russell K Keith-Magee"/></span><br/></span><a class="eventinfo" id='TT35' href='event/30/index.html'>Say What You Mean: Meta-Programming a Declarative API</a><br/><span style="font-size: smaller; font-style: italic;">Dr. Ryan F Kelly</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E031'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS36' name="ICO31"
+            
+            class='icon_schair'><span name="ICC31"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Andy Todd" title="Mr. Andy Todd"/></span><br/></span><a class="eventinfo" id='TT36' href='event/31/index.html'>Teaching Python to the young and impressionable</a><br/><span style="font-size: smaller; font-style: italic;">Georgina Wilcox, Miss Katie M Bell</span><br/>&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        11:30am
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS37' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT37' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        11:40am
+        </td>
+        <td  class="event30" id='E032'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS38' name="ICO32"
+            
+            class='icon_schair'><span name="ICC32"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Dr. Russell K Keith-Magee" title="Dr. Russell K Keith-Magee"/></span><br/></span><a class="eventinfo" id='TT38' href='event/32/index.html'>Fun with App Engine 1.5.0</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Greg Darke</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E033'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS39' name="ICO33"
+            
+            class='icon_schair'><span name="ICC33"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Andy Todd" title="Mr. Andy Todd"/></span><br/></span><a class="eventinfo" id='TT39' href='event/33/index.html'>The NCSS Challenge: teaching programming via automated testing</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Tim Dawborn</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        12:10pm
+        </td>
+        <td  colspan='3' class="break" id='E004'  ><span class="hidden"></span><span id='ICOS40' name="ICO4"
+            class='hidden'></span><a class="eventinfo" id='TT40' href='event/4/index.html'>Lunch</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        01:10pm
+        </td>
+        <td  class="event45" id='E034'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS41' name="ICO34"
+            
+            class='icon_schair'><span name="ICC34"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Andy Todd" title="Mr. Andy Todd"/></span><br/></span><a class="eventinfo" id='TT41' href='event/34/index.html'>Web micro-framework battle</a><br/><span style="font-size: smaller; font-style: italic;">Richard Jones</span><br/>&loz;&loz;
+        </td>
+        <td  class="event45" id='E035'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS42' name="ICO35"
+            
+            class='icon_schair'><span name="ICC35"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Mark J Rees" title="Mr. Mark J Rees"/></span><br/></span><a class="eventinfo" id='TT42' href='event/35/index.html'>How to maintain big app stacks without losing your mind</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Dylan Jay</span><br/>&loz;
+        </td>
+        <td  rowspan='3' class="event45" id='E036'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS43' name="ICO36"
+            class='hidden'></span><a class="eventinfo" id='TT43' href='event/36/index.html'>Python for Science and Engineering, Part 2</a><br/><span style="font-size: smaller; font-style: italic;">Dr. Edward Schofield</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        01:55pm
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS44' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT44' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        02:05pm
+        </td>
+        <td  class="event45" id='E037'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS45' name="ICO37"
+            
+            class='icon_schair'><span name="ICR37"><img src="../../../media/2011/schedule/img/16-star-cold.png" alt="Elena Williams" title="Elena Williams"/></span><br/></span><a class="eventinfo" id='TT45' href='event/37/index.html'>Panel: Python in the webs</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Malcolm Tredinnick, Mr. Dylan Jay, Dr. Russell K Keith-Magee, Richard Jones</span><br/>&loz;
+        </td>
+        <td  class="event45" id='E038'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS46' name="ICO38"
+            
+            class='icon_schair'><span name="ICC38"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Mr. Mark J Rees" title="Mr. Mark J Rees"/></span><br/></span><a class="eventinfo" id='TT46' href='event/38/index.html'>Ah! I see you have the machine that goes &quot;BING&quot;!</a><br/><span style="font-size: smaller; font-style: italic;">Dr. Graeme Cross</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        02:50pm
+        </td>
+        <td  colspan='3' class="break" id='E003'  ><span class="hidden"></span><span id='ICOS47' name="ICO3"
+            class='hidden'></span><a class="eventinfo" id='TT47' href='event/3/index.html'>Afternoon Break</a></td>
+    </tr><tr>
+        <td  class="time"   >
+        03:10pm
+        </td>
+        <td  class="event30" id='E039'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS48' name="ICO39"
+            class='hidden'></span><a class="eventinfo" id='TT48' href='event/39/index.html'>Benchmarking stuff made ridiculously easy (with lots of pictures)</a><br/><span style="font-size: smaller; font-style: italic;">Mr. Tennessee J Leeuwenburg</span><br/>&loz;&loz;
+        </td>
+        <td  class="event30" id='E040'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS49' name="ICO40"
+            class='hidden'></span><a class="eventinfo" id='TT49' href='event/40/index.html'>Bytecode: What, Why, and How to Hack it</a><br/><span style="font-size: smaller; font-style: italic;">Dr. Ryan F Kelly</span><br/>&loz;
+        </td>
+        <td  class="event30" id='E041'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS50' name="ICO41"
+            
+            class='icon_schair'><span name="ICC41"><img src="../../../media/2011/schedule/img/16-tag-hot.png" alt="Kaleb e Ufton" title="Kaleb e Ufton"/></span><br/></span><a class="eventinfo" id='TT50' href='event/41/index.html'>Meta-matters: using decorators for better Python programming</a><br/><span style="font-size: smaller; font-style: italic;">Dr. Graeme Cross</span><br/>&loz;&loz;
+        </td>
+    </tr><tr>
+        <td  class="time"   >
+        03:40pm
+        </td>
+        <td  colspan='3' class="break" id='E001'  ><span class="hidden"></span><span id='ICOS51' name="ICO1"
+            class='hidden'></span><a class="eventinfo" id='TT51' href='event/1/index.html'>Room change</a></td>
+    </tr><tr>
+        <td  rowspan='2' class="time"   >
+        03:50pm
+        </td>
+        <td  class="plenary" id='E005'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS52' name="ICO5"
+            class='hidden'></span><a class="eventinfo" id='TT52' href='event/5/index.html'>Lightning talks</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  rowspan='2' class="time"   >
+        04:50pm
+        </td>
+        <td  class="plenary" id='E008'  onclick="mouseclick(this);"><span class="hidden"></span><span id='ICOS53' name="ICO8"
+            class='hidden'></span><a class="eventinfo" id='TT53' href='event/8/index.html'>Conference Close</a></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr><tr>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+        <td  class="empty"   ><span class='hidden'>.</span></td>
+    </tr>
+    </tbody>
+    <tfoot><tr><td colspan='4' class='legend'><span>&loz; beginner&nbsp;&nbsp;</span><span>&loz;&loz; intermediate&nbsp;&nbsp;</span><span>&loz;&loz;&loz; advanced&nbsp;&nbsp;</span> <span class='event30'>30min talk</span><span class='event45'>45min talk</span><span class='plenary'>plenary event</span><span class='meeting'>meeting/etc.</span><span class='social'>social event</span><span class='break'>break</span> <span><img src="../../../media/2011/schedule/img/16-file-page.png" alt="slides" title="slides"/>slides</span><span><img src="../../../media/2011/schedule/img/16-image.png" alt="video" title="video"/>video</span><span><img src="../../../media/2011/schedule/img/16-tag-pencil.png" alt="session chair" title="session chair"/>session chair</span>
+    </td></tr></tfoot>
+</table>
+
+    <span dojoType="tooltip" connectId="syncsaveid4" toggle="fade" class="hidden">
+        <h3>Save/Sync with server</h3>
+        This is only usefull if using multiple browsers or multiple machines.<br/>
+        Re-loading this page will do the same thing.<br/>
+        Make sure to sync before logging out.</span>
+    <span dojoType="tooltip" connectId="syncrevertid4" toggle="fade" class="hidden">
+        <h3>Undo Changes</h3>
+        This is only usefull if using multiple browsers or multiple machines.<br/>
+        This will delete the local cookie and reload the page.<br/>
+        Make sure to sync before logging out.</span>
+    
+    <span dojoType="tooltip" connectId="TT29" href="/2011/conference/schedule/tooltip/7/" executeScripts="true" toggle="fade" class="plenary"></span>
+    <span dojoType="tooltip" connectId="TT57" href="/2011/conference/schedule/tooltip/45/" executeScripts="true" toggle="fade" class="plenary"></span>
+    <span dojoType="tooltip" connectId="TT30" href="/2011/conference/schedule/tooltip/2/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT31" href="/2011/conference/schedule/tooltip/27/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT32" href="/2011/conference/schedule/tooltip/28/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT33" href="/2011/conference/schedule/tooltip/29/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT34" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT35" href="/2011/conference/schedule/tooltip/30/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT36" href="/2011/conference/schedule/tooltip/31/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT37" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT38" href="/2011/conference/schedule/tooltip/32/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT39" href="/2011/conference/schedule/tooltip/33/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT40" href="/2011/conference/schedule/tooltip/4/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT41" href="/2011/conference/schedule/tooltip/34/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT42" href="/2011/conference/schedule/tooltip/35/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT43" href="/2011/conference/schedule/tooltip/36/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT44" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT45" href="/2011/conference/schedule/tooltip/37/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT46" href="/2011/conference/schedule/tooltip/38/" executeScripts="true" toggle="fade" class="event45"></span>
+    <span dojoType="tooltip" connectId="TT47" href="/2011/conference/schedule/tooltip/3/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT48" href="/2011/conference/schedule/tooltip/39/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT49" href="/2011/conference/schedule/tooltip/40/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT50" href="/2011/conference/schedule/tooltip/41/" executeScripts="true" toggle="fade" class="event30"></span>
+    <span dojoType="tooltip" connectId="TT51" href="/2011/conference/schedule/tooltip/1/" executeScripts="true" toggle="fade" class="break"></span>
+    <span dojoType="tooltip" connectId="TT52" href="/2011/conference/schedule/tooltip/5/" executeScripts="true" toggle="fade" class="plenary"></span>
+    <span dojoType="tooltip" connectId="TT53" href="/2011/conference/schedule/tooltip/8/" executeScripts="true" toggle="fade" class="plenary"></span>
+
+
+
+<script type="text/javascript">
+    <!--
+    init_selected_from_cookie('/media/2011/schedule/');
+    // -->
+</script>
+
+<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+
+
+
+            
+          </div>
+
+      </td><td class="zeroed right">
+
+          
+
+      </td></tr>
+
+      <tr><td class="zeroed" colspan="2">
+          <div id="footer">
+            
+            <div class="badge django">
+              <a href="http://www.djangoproject.com">
+              made with <img src="../../../media/2011/pyconau2011/img/django-footer.png" alt="django" />.
+              </a>
+            </div>
+            <div class="badge mod-wsgi">
+              <a href="http://www.modwsgi.org">
+              powered by <strong>mod_wsgi</strong>.
+              </a>
+            </div>
+            <div class="badge tummy">
+              <a href="http://www.tummy.com">
+              hosted by <strong>tummy.com</strong>.
+              </a>
+            </div>
+            <div class="general">
+
+              Content Generated: Tue, 18 Sep 2012 14:45:53 +1000
+              <!-- <div id="iltag">Made in collaboration with <a href="http://www.imagescape.com">Imaginary Landscape</a>.</div> -->
+
+            </div>
+            
+          </div>
+          <div id="spacer">&nbsp;</div>
+      </td></tr>
+    </table>
+    </div>
+
+  </body>
+</html>
