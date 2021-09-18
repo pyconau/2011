@@ -1,0 +1,921 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body, p, td, div {
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+th { text-align: left; }
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+    font-family: Georgia, serif;
+}
+
+h1, h1 a, h1 a:hover, h1 a:visited, h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, h4, h4 a, h4 a:hover, h4 a:visited {
+    color: #246 !important ;
+    background: #fff !important;
+}
+
+h1.title { font-size: 2em; }
+h2 { font-size: 1.7em; }
+h3 {
+    font-size: 1.3em;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+}
+h4 {
+    font-size: 1.2em;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 0.5em 0;
+    padding-left: 1em;
+    border-left: 3px solid #aaa;
+}
+
+code, pre {
+    font-face: "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Lucida Console", Monaco, monospace;
+    font-size: 1.2em;
+    background-color: #ffd;
+    padding: 0.5em 1em;
+    border-color: #ee9;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+img {
+    border: 0;
+}
+
+img.align-right {
+  margin: 0 0 10px 10px;
+}
+
+img.align-left {
+  margin: 0 10px 10px 0;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    color: #ccc;
+    background-color: #ccc;
+    overflow: hidden;
+    margin: 1em 0;
+}
+
+label.required {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+#content input {
+    padding-left: 0.25em;
+}
+
+#content input, #content textarea, #content select {
+    border-width: 1px;
+    border-color: #aaa;
+    background-color: #fff;
+}
+
+#content input.default {
+    font-weight: bold;
+}
+
+#content {
+    margin-left: 0.25em;
+    font-size: 0.8em;
+}
+
+#content a, #content a:link, #content a:visited {
+    padding: 0 0.1em 0.1em 0.1em;
+    margin: 0 -0.1em -0.1em -0.1em;
+    color: #009;
+    text-decoration: none;
+}
+
+#content a:hover, #dashboard a:hover {
+    color: #fff;
+    background-color: #369;
+    text-decoration: none;
+    background-image: url("/web/20160131205536im_/img/clip.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#dashboard a, #dashboard a:link, #dashboard a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+#dashboard a:hover {
+    background-color: #fff;
+    color: #246;
+    background-image: url('/web/20160131205536im_/img/clip2.png');
+}
+
+#frame {
+    margin: 0 25px 30px 25px;
+}
+
+#layout {
+    width: 100%;
+    min-width: 700px;
+}
+
+#layout, #layout .zeroed {
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+#layout .right {
+    text-align: right;
+}
+
+#header-container {
+    background-color: #369;
+
+}
+
+#header {
+    padding: 10px 0 0 10px;
+    /*background-image: url('/web/20160131205536im_/img/mastbg3.gif');*/
+}
+
+#header, #content, #footer, #nav, #dashboard, #subnav, #rightcolumn {
+    line-height: normal;
+}
+
+#spacer {
+    height: 0;
+    overflow: hidden;
+    width: 700px;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#footer {
+    clear: both;
+    border-top: 1px solid #ccc;
+    margin-top: 2em;
+    padding-top: 0.8em;
+    line-height: 1.1em;
+}
+
+#footer a {
+    color: #444;
+}
+
+#footer .general {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.7em;
+    color: #444;
+}
+
+#footer .badge {
+    float: right;
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 11px;
+    padding-left: 1em;
+}
+
+#footer .badge img {
+    border: 0;
+}
+
+#footer .django, #footer .django a {
+    color: #064;
+}
+
+#footer .django img {
+    border: 0;
+    vertical-align: -30%;
+}
+
+#footer .mod-wsgi, #footer .mod-wsgi a {
+}
+
+.defloat {
+    clear: both;
+    line-height: 0;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-one {
+    overflow: hidden;
+    height: 1.6em;
+    border-style: solid;
+    border-color: #ddd #bbb #bbb #bbb;
+    border-width: 1px 0 0 0;
+    background-color: #fff;
+    background-image: url("/web/20160131205536im_/img/navbg.png");
+    background-position: bottom;
+    background-repeat: repeat-x;
+}
+
+#nav-one ul {
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.7em;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#nav-one li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style-type: none;
+}
+
+#nav-one li a {
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    border-color: #fff #ccc #eee #fff;
+    border-width: 1px 1px 0 0;
+    border-style: solid;
+    color: #249;
+    /* font-weight: bold; */
+}
+
+#nav-one li a.last {
+    border-width: 1px 0 0 0;
+}
+
+#nav-one li a:hover {
+    color: #000;
+    border-color: #369 #ccc #eee #fff;
+}
+
+#nav-one li a.active {
+    color: #000;
+    background-color: #f4f4f4;
+    border-color: #369 #ccc #f4f4f4 #f4f4f4;
+}
+
+#nav-one li a.active:hover {
+    border-color: #db0 #ccc #f4f4f4 #f4f4f4;
+}
+
+#nav-two {
+    background-color: #fff;
+
+    background-image: url("/web/20160131205536im_/img/subnavbg.png");
+    background-repeat: repeat-x;
+
+    font-size: 0.7em;
+    font-family: Verdana, Helvetica, sans-serif;
+}
+
+#nav-two ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav-two li {
+    float: left;
+    list-style-type: none;
+}
+
+#nav-two li a {
+    color: #249;
+    display: block;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-decoration: none;
+}
+
+#nav-two li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#nav-two li a.active {
+    font-weight: bold;
+    color: #000;
+}
+
+#nav-three ul {
+    border-top: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    font-size: 0.6em;
+}
+
+#nav-three li {
+    list-style-type: none;
+    float: left;
+}
+
+#nav-three li a {
+    color: #249;
+    display: block;
+    padding: 1em 0.5em 0.5em 0.75em;
+    text-decoration: none;
+}
+
+#nav-three li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+#nav-three li a.active {
+    font-weight: bold;
+    color: #000;
+}
+
+/* for IE css bug */
+.ghost {
+    overflow: hidden;
+    height: 1px;
+}
+
+#dashboard {
+    margin-top: 5px;
+    padding: 0 5px 0 10px;
+    color: #666;
+    font-size: 0.65em;
+    padding-top: 0.25em;
+    padding-bottom: 0.5em;
+}
+
+#breadcrumbs, #metanav {
+    font-family: Verdana, Hevletica, sans-serif;
+}
+
+#metanav {
+    float: right;
+}
+
+#metanav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#metanav li {
+    margin: 0;
+    float: left;
+    list-style-type: none;
+    padding: 0 0.5em 0 0.5em;
+    border-left: 1px solid #eee;
+    white-space: nowrap;
+}
+
+#metanav li.first {
+    border-left: 0;
+}
+
+#metanav li.last {
+    padding-right: 0;
+}
+
+#search {
+    color: #fff;
+    padding: 40px 10px 0 0;
+    width: 170px;
+    float: right;
+}
+
+#search input.textfield {
+    background-color: #eee;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 160px;
+}
+
+#content ul {
+    margin: 0;
+    padding-left: 1em;
+}
+
+#content ul li {
+    padding-left: 1em;
+    list-style-type: none;
+    background-image: url('/web/20160131205536im_/img/bullet1.png');
+    background-repeat: no-repeat;
+    background-position: 0 0.55em;
+    vertical-align: top;
+}
+
+#breadcrumbs {
+    color: #fff;
+    text-transform: lowercase;
+}
+
+#breadcrumbs a {
+    color: #666;
+}
+
+#toolbar {
+    margin-top: 20px;
+}
+
+#lfcolumn {
+    width: 15em !important;
+}
+
+#rightcolumn {
+    padding-left: 2em;
+    margin-left: auto;
+    width: 160px;
+    text-align: left;
+}
+
+#spx123 {
+}
+
+#spx123 .header {
+    margin-top: 1em;
+    font-size: 0.65em;
+    font-family: Verdana, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+}
+
+#spx123 ul {
+    margin: 0;
+    padding: 0;
+}
+
+#spx123 li {
+    list-style-type: none;
+}
+
+.submit-row {
+    margin-top: 2em;
+}
+
+.submit-row p {
+    padding: 0;
+    margin: 0;
+}
+
+.submit-row input {
+    margin-right: 1em;
+}
+
+.submit-row input:hover {
+    color: #fff !important;
+    background-color: #369 !important;
+    border-color: #369 !important;
+}
+
+.submit-row b {
+    padding-right: 2em;
+}
+
+.bug a {
+    font-family: Georgia, serif;
+    font-size: 1.4em;
+}
+
+.bug div {
+    font-size: 1em;
+}
+
+.bug div a {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+#process-flow {
+    margin-top: 1em;
+    color: #ccc;
+}
+
+#process-flow span {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding: 0 0.25em 0 0.25em;
+    border: 1px solid #ccc;
+    color: #666;
+    border-bottom: 2px solid #ccc;
+}
+
+#process-flow span.selected {
+    color: #fff;
+    border: 1px solid #258;
+    background-color: #369;
+    border-bottom: 2px solid #258;
+}
+
+
+/* django admin css cloning */
+
+/* GLOBAL DEFAULTS */
+#content form { margin:0; padding:0; }
+#content fieldset { margin:0; padding:0; }
+
+/* TEXT STYLES & MODIFIERS */
+#content .small { font-size:11px; }
+#content .tiny { font-size:10px; }
+#content p.tiny { margin-top:-2px; }
+#content .mini { font-size:9px; }
+#content p.mini { margin-top:-3px; }
+#content .help, #content p.help { font-size:10px !important; color: #666; }
+#content p img, #content h1 img, #content h2 img, #content h3 img, #content h4 img, #content td img { vertical-align:middle; }
+#content .quiet, #content a.quiet:link, #content a.quiet:visited { color: #666 !important;font-weight:normal !important; }
+#content .quiet strong { font-weight:bold !important; }
+#content .float-right { float:right; }
+#content .float-left { float:left; }
+#content .clear { clear:both; }
+#content .align-left { text-align:left; }
+#content .align-right { text-align:right; }
+#content .example { margin:10px 0; padding:5px 10px; background:#efefef; }
+#content .nowrap { white-space:nowrap; }
+
+/* TABLES */
+#content table { border-collapse:collapse; border-color:#ccc; }
+#content td, #content th { font-size:11px; line-height:13px; border-bottom:1px solid #eee; vertical-align:top; padding:5px; font-family:"Lucida Grande", Verdana, Arial, sans-serif; }
+#content th { text-align:left; font-size:12px; font-weight:bold; }
+#content thead th,
+#content tfoot td { color: #000; padding:2px 5px; font-size:11px; background:#e1e1e1 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/nav-bg.gif) top left repeat-x; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
+#content tfoot td { border-bottom:none; border-top:1px solid #ddd; }
+#content thead th:first-child,
+#content tfoot td:first-child { border-left:none !important; }
+#content thead th.optional { font-weight:normal !important; }
+#content fieldset table { border-right:1px solid #eee; }
+#content tr.row-label td { font-size:9px; padding-top:2px; padding-bottom:0; border-bottom:none; margin-top:-1px; }
+#content tr.alt { background:#f6f6f6; }
+#content .row1 { background:#EDF3FE; }
+#content .row2 { background:white; }
+
+/* SORTABLE TABLES */
+#content thead th a:link, #content thead th a:visited { display:block; }
+#content table thead th.sorted { background-position:bottom left !important; }
+#content table thead th.sorted a { padding-right:13px; }
+#content table thead th.ascending a { background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/arrow-down.gif) right .4em no-repeat; }
+#content table thead th.descending a { background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/arrow-up.gif) right .4em no-repeat; }
+
+/* ORDERABLE TABLES */
+#content table.orderable tbody tr td:hover { cursor:move; }
+#content table.orderable tbody tr td:first-child { padding-left:14px; background-image:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/nav-bg-grabber.gif); background-repeat:repeat-y; }
+#content table.orderable-initalized .order-cell, #content body>tr>td.order-cell { display:none; }
+
+/* MODULES */
+#content .module { border:1px solid #ccc; margin-bottom:5px; background:white; }
+#content .module p, #content .module ul, #content .module h3, #content .module h4, #content .module dl, #content .module pre { padding-left:10px; padding-right:10px; }
+#content .module blockquote { margin-left:12px; }
+#content .module ul, #content .module ol { margin-left:1.5em; }
+#content .module h3 { margin-top:.6em; }
+#content .module h2, #content .module caption { margin:0; padding:2px 5px 3px 5px; font-size:11px; text-align:left; font-weight:bold; background:#7CA0C7 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/default-bg.gif) top left repeat-x; color:white; }
+#content .module table { border-collapse: collapse; }
+
+/* MESSAGES & ERRORS */
+#content ul.messagelist { padding:0 0 5px 0; margin:0; }
+#content ul.messagelist li { font-size:12px; display:block; padding:4px 5px 4px 25px; margin:0 0 3px 0; border-bottom:1px solid #ddd; color:#666; background:#ffc url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_success.gif) 5px .3em no-repeat; }
+#content .errornote { font-size:12px !important; display:block; padding:4px 5px 4px 25px; margin:0 0 3px 0; border:1px solid red; color:red;background:#ffc url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_error.gif) 5px .3em no-repeat; }
+#content ul.errorlist { margin: 0 0 0.5em 0 !important; padding: 0 !important; }
+#content .errorlist li { border: 1px solid #d00; font-size:11px !important; font-weight: bold; display:block; padding:4px 5px 4px 20px !important; margin:0 0 3px 0; color: #fff; background: #f00 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_alert.gif) 3px .3em no-repeat !important; }
+#content td ul.errorlist { margin:0 0 0.5em 0 !important; padding:0 !important; }
+#content td ul.errorlist li { margin:0 !important; }
+#content .error { background:#ffc; }
+#content .error input, #content .error select { border:1px solid red; }
+#content div.system-message { background: #ffc; margin: 10px; padding: 6px 8px; font-size: .8em; }
+#content div.system-message p.system-message-title { padding:4px 5px 4px 25px; margin:0; color:red; background:#ffc url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_error.gif) 5px .3em no-repeat; }
+#content .description { font-size:12px; padding:5px 0 0 12px; }
+
+/* ACTION ICONS */
+#content .addlink { padding-left:12px; background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_addlink.gif) 0 .2em no-repeat !important; }
+#content .changelink { padding-left:12px; background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_changelink.gif) 0 .2em no-repeat !important; }
+
+/* OBJECT TOOLS */
+#content .object-tools { font-size:10px; font-weight:bold; font-family:Arial,Helvetica,sans-serif; padding-left:0; float:right; position:relative; margin-top:-2.4em; margin-bottom:-2em; }
+#content .form-row .object-tools { margin-top:5px; margin-bottom:5px; float:none; height:2em; padding-left:3.5em; }
+#content .object-tools li { display:block; float:left; background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-left.gif) 0 0 no-repeat; padding:0 0 0 8px; margin-left:2px; height:16px; }
+#content .object-tools li:hover { background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-left_over.gif) 0 0 no-repeat; }
+#content .object-tools a:link, #content .object-tools a:visited { display:block; float:left; color:white; padding:.1em 14px .1em 8px; height:14px; background:#999 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-right.gif) 100% 0 no-repeat; }
+#content .object-tools a:hover, #content .object-tools li:hover a { background:#5b80b2 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-right_over.gif) 100% 0 no-repeat; }
+#content .object-tools a.viewsitelink, #content .object-tools a.golink { background:#999 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-arrowright.gif) top right no-repeat; padding-right:28px; }
+#content .object-tools a.viewsitelink:hover, #content .object-tools a.golink:hover { background:#5b80b2 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-arrowright_over.gif) top right no-repeat; }
+#content .object-tools a.addlink { background:#999 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-add.gif) top right no-repeat; padding-right:28px; }
+#content .object-tools a.addlink:hover { background:#5b80b2 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-add_over.gif) top right no-repeat; }
+
+/* OBJECT HISTORY */
+#content table#change-history { width:100%; }
+#content table#change-history tbody th { width:16em; }
+
+/* tweaks to django admin css */
+
+#content td, #content th {
+    border-bottom: 1px solid #ddd;
+}
+
+#content thead th a:hover {
+    color: #fff;
+}
+
+#content .deletelink {
+    display: block;
+    cursor: default;
+    color: #000 !important;
+    font-size: 0.95em;
+    background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_deletelink.gif) 5px .35em no-repeat !important;
+    font-weight: bold;
+    border: 1px outset #aaa;
+    margin: 0 1em 0 0 !important;
+    padding: 0 0.4em 1px 18px !important;
+}
+
+#content .deletelink:hover {
+    color: #fff !important;
+    background: #369 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_deletelink.gif) 5px .35em no-repeat !important;
+}
+
+#content .addlink { background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_addlink.gif) 0 .2em no-repeat !important; }
+#content .changelink { background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_changelink.gif) 0 .2em no-repeat !important; }
+
+#content .changelink, #content .addlink {
+    font-family: Verdana, Helvetica, sans-serif;
+    padding-left: 14px !important;
+}
+
+#content .changelink:hover {
+    color: #246;
+    background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_changelink.gif) 0 .2em no-repeat !important;
+}
+
+#content .addlink:hover {
+    color: #246;
+    background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_addlink.gif) 0 .2em no-repeat !important;
+}
+
+#content .module h2, #content .module caption {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#content .module .help {
+}
+
+/* schedule */
+
+.schedule .legend { float: right; }
+
+.schedule .legend-item {
+    float: left;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding-left: 2em;
+    color: #666;
+    line-height: 1.2em;
+}
+
+.schedule .legend-item .sample {
+    float: left;
+    border: 1px solid #ccc;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin-right: 0.5em;
+}
+
+.schedule tr, .schedule td, .schedule th {
+    border-color: #ccc !important;
+}
+
+.schedule .time {
+    font-size: 0.85em !important;
+    color: #666;
+    width: 7em;
+}
+
+.schedule .slot {
+    width: 12%;
+    cursor: pointer;
+    font-size: 0.8em !important;
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.schedule .break {
+    color: #666;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.schedule .color1, .schedule-dialog .color1 { background-color: #ffc; color: #880; }
+.schedule .color2, .schedule-dialog .color2 { background-color: #fec; color: #850; }
+.schedule .color3, .schedule-dialog .color3 { background-color: #cfc; color: #040; }
+.schedule .color4, .schedule-dialog .color4 { background-color: #cef; color: #047; }
+.schedule .color5, .schedule-dialog .color5 { background-color: #efc; color: #350; }
+.schedule .color6, .schedule-dialog .color6 { background-color: #ddd; color: #444; }
+.schedule .color7, .schedule-dialog .color7 { background-color: #fff; color: #222; }
+
+.schedule .color1, .schedule-dialog .color1,
+.schedule .color2, .schedule-dialog .color2,
+.schedule .color3, .schedule-dialog .color3,
+.schedule .color4, .schedule-dialog .color4,
+.schedule .color5, .schedule-dialog .color5,
+.schedule .color6, .schedule-dialog .color6,
+.schedule .color7, .schedule-dialog .color7 {
+    background-image: url('/web/20160131205536im_/img/stipple-bg.png');
+}
+
+/*
+.schedule .color1:hover,
+.schedule .color2:hover,
+.schedule .color3:hover,
+.schedule .color4:hover,
+.schedule .color5:hover,
+.schedule .color6:hover,
+.schedule .color7:hover {
+    background-image: url('/web/20160131205536im_/img/stipple-bg2.png');
+}
+*/
+
+.schedule-dialog {
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+.schedule-dialog .strip {
+    height: 10px;
+    overflow: hidden;
+}
+
+.schedule-dialog h2 {
+    margin: 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.schedule-dialog .dialog-body {
+    padding: 5px 10px;
+}
+
+.schedule-dialog .dialog-subhead {
+    font-weight: bold;
+}
+
+.schedule-dialog .dialog-details {
+    padding-top: 1em;
+    padding-bottom: .5em;
+    font-size: 0.85em;
+}
+
+.schedule-dialog .dialog-footer {
+    color: #666;
+    border-top: 1px solid #ddd;
+    padding: 5px 10px;
+    font-size: 0.85em;
+}
+
+.reg-header {
+    color: #246;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-image: url("/web/20160131205536im_/img/subnavbg.png");
+    background-repeat: repeat-x;
+    padding-top: 0.5em;
+    padding-left: 5px;
+}
+
+.reg-header:hover {
+    text-decoration: underline;
+}
+
+.reg-form ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.reg-form li {
+    background: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.proposal_list_summary h2 a {
+    margin-right: 10px !important;
+}
+
+.proposal_list_summary h2 a:hover {
+    background: #fff !important;
+}
+
+#invoice-exists-warning {
+    padding: 1em;
+    color: #d00;
+    font-weight: bold;
+    border: 1px solid #d00;
+    font-size: 0.9em;
+}
+
+#invoice-exists-warning .spacer {
+    display: none;
+}
+
+/* history diff tables */
+#content table.diff td.diff_next {background-color:#eeeeee}
+#content table.diff span.diff_add {background-color:#aaffaa}
+#content table.diff span.diff_chg {background-color:#ffff77}
+#content table.diff span.diff_sub {background-color:#ffaaaa}
+#content table.diff td { padding-top: 0px; padding-bottom: 0px; white-space: normal;}
+#content table.diff td.diff_header { text-align: right; vertical-align: top;}
+
+/* Docutils styles */
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border-left: 3px solid #000 ;
+  padding: 0 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border-left: 3px solid #aaa ;
+  padding: 0 1em ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+hr.docutils {
+  clear: both;
+}
+
+div.topic {
+  margin: 2em }
+
+p.topic-title {
+  font-weight: bold }
+
+#content a.invoice-WP { color: orange; }		/* Waiting for Manual Payment Notification */
+#content a.invoice-PM { }		/* Manually Marked Paid */
+#content a.invoice-WA { color: orange; }		/* Waiting for Credit Card Payment Notification */
+#content a.invoice-CO { color: orange; }		/* Allow Checkout */
+#content a.invoice-PA { }		/* Paid via Verisign */
+#content a.invoice-WR { color: red; }		/* Awaiting Refund Notification */
+#content a.invoice-CA { text-decoration: strike-through; }		/* Canceled */
+#content a.invoice-IV { text-decoration: strike-through; }		/* Invalidated */
+
+
+/*
+     FILE ARCHIVED ON 20:55:36 Jan 31, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 08:08:52 Sep 15, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 101.579 (3)
+  load_resource: 100.432
+  exclusion.robots: 0.253
+  cdx.remote: 0.095
+  CDXLines.iter: 20.475 (3)
+  captures_list: 241.908
+  LoadShardBlock: 199.13 (3)
+  PetaboxLoader3.datanode: 123.368 (4)
+  exclusion.robots.policy: 0.242
+  esindex: 0.04
+*/

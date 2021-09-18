@@ -14,7 +14,7 @@
 <div id='controlbar' style="margin-bottom: 5px;">
     <div class="toolcmds" style="margin-bottom: 5px;">
     <a href="javascript:window.close()" alt="close window" title="close window">
-        <img style="border: 0px;" src="../../../media/2011/admin/img/admin/icon_deletelink.gif"/> Close Window</a>
+        <img style="border: 0px;" src="/img/icon_deletelink.gif"/> Close Window</a>
     </div>
         <H2 style="margin-top: 3px; margin-bottom: 5px;">Schedule Help</H2>
 </div>
@@ -35,7 +35,7 @@
         on the server and your schedule will be accessible from any browser or
         machine. If you log out, the local login schedule cookie will be removed,
         though a non-login schedule cookie may remain. You may have to
-        <img src="../../../media/2011/schedule/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
+        <img src="/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
         re-sync with the server before changes appear on other machines.
         Re-syncing and refreshing the schedule page have the same effect.
         </p>
@@ -44,7 +44,7 @@
         <span style="font-weight: bold;">Presenters<spam> with a PyCon login
         account will have their talks automatically selected and 
         flagged with the
-        <img src="../../../media/2011/schedule/img/16-member.png" alt="presenter" title="presenter"/>
+        <img src="/img/16-member.png" alt="presenter" title="presenter"/>
         presenter icon.
         </p>
         
@@ -52,7 +52,7 @@
         <span style="font-weight: bold;">Session Chairs</span> with a PyCon login
         account will have thier talks autotomatically selected and flagged 
         with the
-        <img src="../../../media/2011/schedule/img/16-tag-pencil.png" alt="session chair" title="session chair"/>
+        <img src="/img/16-tag-pencil.png" alt="session chair" title="session chair"/>
         session chair icon. Session chairs are assigned to the Room and Time slot,
         and not the specific talk. The talk may be changed to another room or time,
         but the session chair assignment will not move with that change.<br/>
@@ -73,7 +73,7 @@
         For 'Selected Events': If you do not have a PyCon login, updates may be
         sporadic and take 24+ hours to propagate.
         If you do have a PyCon login, you must 
-        <img src="../../../media/2011/schedule/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
+        <img src="/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
         re-sync with the server before the calendar software will see the changes.</span>        
         </span>
         </p>
@@ -104,14 +104,14 @@
         For 'Selected Events': If you do not have a PyCon login, you must use the
         browser with the PyCon schedule cookie in order to get updates.
         If you do have a PyCon login, you must 
-        <img src="../../../media/2011/schedule/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
+        <img src="/img/refresh.gif" alt='re-sync with server' title='re-sync with server'/>
         re-sync with the server before Google Calendar will see the changes.</span>
         </p>
     </div>
 </div>
 
 <div id='controlbar'><div class="toolcmds"><a href="javascript:window.close()" alt="close window" title="close window">
-        <img style="border: 0px;" src="../../../media/2011/admin/img/admin/icon_deletelink.gif"/> Close Window</a></div>
+        <img style="border: 0px;" src="/img/icon_deletelink.gif"/> Close Window</a></div>
 </div>
 </body>
 </html>
