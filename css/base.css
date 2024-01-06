@@ -547,7 +547,7 @@ label.required {
 #content td, #content th { font-size:11px; line-height:13px; border-bottom:1px solid #eee; vertical-align:top; padding:5px; font-family:"Lucida Grande", Verdana, Arial, sans-serif; }
 #content th { text-align:left; font-size:12px; font-weight:bold; }
 #content thead th,
-#content tfoot td { color: #000; padding:2px 5px; font-size:11px; background:#e1e1e1 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/nav-bg.gif) top left repeat-x; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
+#content tfoot td { color: #000; padding:2px 5px; font-size:11px; background:#e1e1e1 url(/img/admin/nav-bg.gif) top left repeat-x; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
 #content tfoot td { border-bottom:none; border-top:1px solid #ddd; }
 #content thead th:first-child,
 #content tfoot td:first-child { border-left:none !important; }
@@ -562,12 +562,12 @@ label.required {
 #content thead th a:link, #content thead th a:visited { display:block; }
 #content table thead th.sorted { background-position:bottom left !important; }
 #content table thead th.sorted a { padding-right:13px; }
-#content table thead th.ascending a { background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/arrow-down.gif) right .4em no-repeat; }
-#content table thead th.descending a { background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/arrow-up.gif) right .4em no-repeat; }
+#content table thead th.ascending a { background:url(/img/admin/arrow-down.gif) right .4em no-repeat; }
+#content table thead th.descending a { background:url(/img/admin/arrow-up.gif) right .4em no-repeat; }
 
 /* ORDERABLE TABLES */
 #content table.orderable tbody tr td:hover { cursor:move; }
-#content table.orderable tbody tr td:first-child { padding-left:14px; background-image:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/nav-bg-grabber.gif); background-repeat:repeat-y; }
+#content table.orderable tbody tr td:first-child { padding-left:14px; background-image:url(/img/admin/nav-bg-grabber.gif); background-repeat:repeat-y; }
 #content table.orderable-initalized .order-cell, #content body>tr>td.order-cell { display:none; }
 
 /* MODULES */
@@ -576,38 +576,38 @@ label.required {
 #content .module blockquote { margin-left:12px; }
 #content .module ul, #content .module ol { margin-left:1.5em; }
 #content .module h3 { margin-top:.6em; }
-#content .module h2, #content .module caption { margin:0; padding:2px 5px 3px 5px; font-size:11px; text-align:left; font-weight:bold; background:#7CA0C7 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/default-bg.gif) top left repeat-x; color:white; }
+#content .module h2, #content .module caption { margin:0; padding:2px 5px 3px 5px; font-size:11px; text-align:left; font-weight:bold; background:#7CA0C7 url(/img/admin/default-bg.gif) top left repeat-x; color:white; }
 #content .module table { border-collapse: collapse; }
 
 /* MESSAGES & ERRORS */
 #content ul.messagelist { padding:0 0 5px 0; margin:0; }
-#content ul.messagelist li { font-size:12px; display:block; padding:4px 5px 4px 25px; margin:0 0 3px 0; border-bottom:1px solid #ddd; color:#666; background:#ffc url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_success.gif) 5px .3em no-repeat; }
-#content .errornote { font-size:12px !important; display:block; padding:4px 5px 4px 25px; margin:0 0 3px 0; border:1px solid red; color:red;background:#ffc url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_error.gif) 5px .3em no-repeat; }
+#content ul.messagelist li { font-size:12px; display:block; padding:4px 5px 4px 25px; margin:0 0 3px 0; border-bottom:1px solid #ddd; color:#666; background:#ffc url(/img/admin/icon_success.gif) 5px .3em no-repeat; }
+#content .errornote { font-size:12px !important; display:block; padding:4px 5px 4px 25px; margin:0 0 3px 0; border:1px solid red; color:red;background:#ffc url(/img/admin/icon_error.gif) 5px .3em no-repeat; }
 #content ul.errorlist { margin: 0 0 0.5em 0 !important; padding: 0 !important; }
-#content .errorlist li { border: 1px solid #d00; font-size:11px !important; font-weight: bold; display:block; padding:4px 5px 4px 20px !important; margin:0 0 3px 0; color: #fff; background: #f00 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_alert.gif) 3px .3em no-repeat !important; }
+#content .errorlist li { border: 1px solid #d00; font-size:11px !important; font-weight: bold; display:block; padding:4px 5px 4px 20px !important; margin:0 0 3px 0; color: #fff; background: #f00 url(/img/admin/icon_alert.gif) 3px .3em no-repeat !important; }
 #content td ul.errorlist { margin:0 0 0.5em 0 !important; padding:0 !important; }
 #content td ul.errorlist li { margin:0 !important; }
 #content .error { background:#ffc; }
 #content .error input, #content .error select { border:1px solid red; }
 #content div.system-message { background: #ffc; margin: 10px; padding: 6px 8px; font-size: .8em; }
-#content div.system-message p.system-message-title { padding:4px 5px 4px 25px; margin:0; color:red; background:#ffc url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_error.gif) 5px .3em no-repeat; }
+#content div.system-message p.system-message-title { padding:4px 5px 4px 25px; margin:0; color:red; background:#ffc url(/img/admin/icon_error.gif) 5px .3em no-repeat; }
 #content .description { font-size:12px; padding:5px 0 0 12px; }
 
 /* ACTION ICONS */
-#content .addlink { padding-left:12px; background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_addlink.gif) 0 .2em no-repeat !important; }
-#content .changelink { padding-left:12px; background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_changelink.gif) 0 .2em no-repeat !important; }
+#content .addlink { padding-left:12px; background:url(/img/admin/icon_addlink.gif) 0 .2em no-repeat !important; }
+#content .changelink { padding-left:12px; background:url(/img/admin/icon_changelink.gif) 0 .2em no-repeat !important; }
 
 /* OBJECT TOOLS */
 #content .object-tools { font-size:10px; font-weight:bold; font-family:Arial,Helvetica,sans-serif; padding-left:0; float:right; position:relative; margin-top:-2.4em; margin-bottom:-2em; }
 #content .form-row .object-tools { margin-top:5px; margin-bottom:5px; float:none; height:2em; padding-left:3.5em; }
-#content .object-tools li { display:block; float:left; background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-left.gif) 0 0 no-repeat; padding:0 0 0 8px; margin-left:2px; height:16px; }
-#content .object-tools li:hover { background:url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-left_over.gif) 0 0 no-repeat; }
-#content .object-tools a:link, #content .object-tools a:visited { display:block; float:left; color:white; padding:.1em 14px .1em 8px; height:14px; background:#999 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-right.gif) 100% 0 no-repeat; }
-#content .object-tools a:hover, #content .object-tools li:hover a { background:#5b80b2 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tool-right_over.gif) 100% 0 no-repeat; }
-#content .object-tools a.viewsitelink, #content .object-tools a.golink { background:#999 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-arrowright.gif) top right no-repeat; padding-right:28px; }
-#content .object-tools a.viewsitelink:hover, #content .object-tools a.golink:hover { background:#5b80b2 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-arrowright_over.gif) top right no-repeat; }
-#content .object-tools a.addlink { background:#999 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-add.gif) top right no-repeat; padding-right:28px; }
-#content .object-tools a.addlink:hover { background:#5b80b2 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/tooltag-add_over.gif) top right no-repeat; }
+#content .object-tools li { display:block; float:left; background:url(/img/admin/tool-left.gif) 0 0 no-repeat; padding:0 0 0 8px; margin-left:2px; height:16px; }
+#content .object-tools li:hover { background:url(/img/admin/tool-left_over.gif) 0 0 no-repeat; }
+#content .object-tools a:link, #content .object-tools a:visited { display:block; float:left; color:white; padding:.1em 14px .1em 8px; height:14px; background:#999 url(/img/admin/tool-right.gif) 100% 0 no-repeat; }
+#content .object-tools a:hover, #content .object-tools li:hover a { background:#5b80b2 url(/img/admin/tool-right_over.gif) 100% 0 no-repeat; }
+#content .object-tools a.viewsitelink, #content .object-tools a.golink { background:#999 url(/img/admin/tooltag-arrowright.gif) top right no-repeat; padding-right:28px; }
+#content .object-tools a.viewsitelink:hover, #content .object-tools a.golink:hover { background:#5b80b2 url(/img/admin/tooltag-arrowright_over.gif) top right no-repeat; }
+#content .object-tools a.addlink { background:#999 url(/img/admin/tooltag-add.gif) top right no-repeat; padding-right:28px; }
+#content .object-tools a.addlink:hover { background:#5b80b2 url(/img/admin/tooltag-add_over.gif) top right no-repeat; }
 
 /* OBJECT HISTORY */
 #content table#change-history { width:100%; }
@@ -628,7 +628,7 @@ label.required {
     cursor: default;
     color: #000 !important;
     font-size: 0.95em;
-    background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_deletelink.gif) 5px .35em no-repeat !important;
+    background: url(/img/admin/icon_deletelink.gif) 5px .35em no-repeat !important;
     font-weight: bold;
     border: 1px outset #aaa;
     margin: 0 1em 0 0 !important;
@@ -637,11 +637,11 @@ label.required {
 
 #content .deletelink:hover {
     color: #fff !important;
-    background: #369 url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_deletelink.gif) 5px .35em no-repeat !important;
+    background: #369 url(/img/admin/icon_deletelink.gif) 5px .35em no-repeat !important;
 }
 
-#content .addlink { background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_addlink.gif) 0 .2em no-repeat !important; }
-#content .changelink { background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_changelink.gif) 0 .2em no-repeat !important; }
+#content .addlink { background: url(/img/admin/icon_addlink.gif) 0 .2em no-repeat !important; }
+#content .changelink { background: url(/img/admin/icon_changelink.gif) 0 .2em no-repeat !important; }
 
 #content .changelink, #content .addlink {
     font-family: Verdana, Helvetica, sans-serif;
@@ -650,12 +650,12 @@ label.required {
 
 #content .changelink:hover {
     color: #246;
-    background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_changelink.gif) 0 .2em no-repeat !important;
+    background: url(/img/admin/icon_changelink.gif) 0 .2em no-repeat !important;
 }
 
 #content .addlink:hover {
     color: #246;
-    background: url(/web/20160131205536im_/http://pycon-au.orgadmin/img/admin/icon_addlink.gif) 0 .2em no-repeat !important;
+    background: url(/img/admin/icon_addlink.gif) 0 .2em no-repeat !important;
 }
 
 #content .module h2, #content .module caption {
